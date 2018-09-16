@@ -1,0 +1,104 @@
+<html>
+
+
+<head>
+  <title> Profile </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+</style>
+
+
+<style>
+h3{
+
+  color: tomato;
+  padding-left: 340px;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: white;
+
+}
+
+
+
+</style>
+
+<body>
+
+  <div class="jumbotron text-center" style="background-color:tomato">
+    <h1 style="color:white">Profile</h1>
+    <p> </p>
+  </div>
+
+  <div class="col-sm-4 text-center">
+    <canvas id="myCanvas" width="600" height="400"</canvas>
+      <script>
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+      var centerX = canvas.width / 2;
+      var centerY = canvas.height / 2;
+      var radius = 70;
+
+      context.beginPath();
+      context.arc(centerX+120, centerY=100, radius, 0, 2 * Math.PI, false);
+      context.fillStyle = 'grey';
+      context.fill();
+      context.lineWidth = 5;
+      context.strokeStyle = 'tomato';
+      context.stroke();
+
+      </script>
+    </br>
+  </br>
+</div>
+
+</br>
+</br>
+</br>
+</br>
+<div class="col-sm-4 text-center">
+
+
+  <p>Name: <br> Grade: <br> Number of archievements: </p>
+
+</div>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+<div class="col-sm-4 text-center">
+  <a href="index.html">
+    <button type="button" class ="pos" style="border-radius:12px;font-size:20px;color:white;background-color:tomato;"> Home </button>
+  </a>
+
+</div>
+
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/web3.min.js"></script>
+<script src="js/truffle-contract.js"></script>
+<script src="js/app.js"></script>
+</body>
+
+
+
+
+</html>
